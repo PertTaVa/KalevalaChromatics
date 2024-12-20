@@ -1,0 +1,68 @@
+import re
+import pandas as pd
+
+# Lists of megacolors for Finnish and English
+finnish_colors = [
+    "musta", "valkea", "punainen", "sininen", "vihreä","viherän", "keltainen",
+    "harmaa", "ruskea", "kultainen", "hopeinen", "violetti", "turkoosi", "hopea", "pronssi", 
+    "lämpimän", "kirkas", "tumma", "vaalea",
+    "tulinen", "valkoinen", "kiiltävä"
+]
+english_colors = [
+    "black", "white", "red", "blue", "green", "yellow", "grey", "brown",
+    "golden", "silver", "violet", "turquoise", "emerald", "crimson", "azure",
+    "fiery", "bright", "dark", "pale", "snow-white", "fiery-red", "shiny"
+]  
+
+# List of characters
+characters = [
+    "Ahti", "Ahto", "Ainikki", "Aino", "Antero Vipunen", "Hiisi", "Iku-Tiera", "Iku-Turso", 
+    "Ilmarinen", "Ilmari", "Ilmatar", "Joukahainen", "Kalervo", "Kaleva", "Kaukamoinen", 
+    "Kauko", "Kaukomieli", "Kauppi", "Kullervo", "Kyllikki", "Lemminkäinen", "Lemminkäisen äiti", 
+    "Lempo", "Louhi", "Lyylikki", "Marjatta", "Mielikki", "Mimerkki","Nyyrikki","Osmo", "Pellervoinen",
+    "Saarelainen", "Sampsa", "Sämpsä", "Sampo", "sampo", "Syöjätär", "Tapio", 
+    "Tellervo", "Tiera", "Teuri", "Teiri", "Tursas", "Turso", "Tuulikki", "Tuuri ",
+    "Ukko", "Untamo", "Untamoinen", "Unto", "Vellamo", "Vetehinen", "Virokannas", "Väinämöinen", 
+    "Väinö"
+    ]
+
+# Function to read text from a file
+def read_text(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        return file.read()
+
+# Function to find character and color mentions in text
+def find_characters_and_colors(text, characters, colors):
+    results = []
+    for character in characters:
+        # Search for sentences mentioning the character
+        pattern = rf"([^.]*?\b{character}\b[^.]*\.)"
+        sentences = re.findall(pattern, text, re.IGNORECASE)
+        for sentence in sentences:
+            # Check which colors are mentioned in the same sentence
+            found_colors = [color for color in colors if re.search(rf"\b{color}\b", sentence, re.IGNORECASE)]
+            for color in found_colors:
+                results.append({"Character": character, "Color": color, "Sentence": sentence.strip()})
+    return results
+
+# Read Finnish and English texts
+finnish_text = read_text("KalevalaFin.txt")
+english_text = read_text("Kalevala_Eng.txt")
+
+# Find mentions of characters and colors
+finnish_results = find_characters_and_colors(finnish_text, characters, finnish_colors)
+english_results = find_characters_and_colors(english_text, characters, english_colors)
+
+# Create pandas DataFrames
+df_finnish = pd.DataFrame(finnish_results)
+df_english = pd.DataFrame(english_results)
+
+# Save results to CSV files
+df_finnish.to_csv("finnish_characters_and_colors.csv", index=False, encoding="utf-8")
+df_english.to_csv("english_characters_and_colors.csv", index=False, encoding="utf-8")
+
+# Display results
+print("Finnish Results:")
+print(df_finnish.head())
+print("\nEnglish Results:")
+print(df_english.head())
