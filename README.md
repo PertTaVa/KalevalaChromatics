@@ -1,2 +1,64 @@
-# KalevalaChromatics
+# Kalevala Chromatics
+20.12.2024. Computational Literacy final project of Tatiana Pertseva.
+
 Kalevala Chromatics: What do colours say?  Semiotic insights from the Finnish-Karelian epic Kalevala. This project is dedicated to analysing the use of colours in the Finnish-Karelian epic. By examining how colors are associated with characters, events, and themes, it explores their symbolic and cultural significance in this literary masterpiece.
+
+Humanities research questions
+
+The epic of a nation often serves as a cultural "Bible," a foundational text that embodies its identity. In the case of Finland, the Kalevala fulfills this role, representing Finnish culture, history, and worldview. This study examines the role of color in the Kalevala as a semiotic system, one that conveys meanings, emotions, and ideas. Building on previous research by scholars such as Almalech (2021), Kress and van Leeuwen (2002), Kourdis (2017), Eco (1996), and Lotman (1994), this research investigates how color systems within the text function as an internal structure, adding layers of meaning. Lotman’s concept of the "text within a text" is especially relevant here, where the use of color serves as a coded system that enhances the narrative and symbolically enriches the reader's interpretation. 
+According to Lotman, a "text within a text" refers to how the differentiated coding of text elements helps define both the author's structure and the reader's interpretation. Lotman’s concept emphasizes the complexity of texts and their interrelation with cultural contexts. He suggests that culture itself can be viewed as a "text"—a layered, interrelated system of subtexts, each contributing to the overall meaning. For our purposes, this study explores how color references serve as semiotic decoders of cultural codes, reflecting deeper meanings within the narrative. 
+Colors, in this context, act as semiotic decoders of a cultural code. We build on Almalech's concept of verbal and visual colors: verbal colors involve the use of words to describe color, while visual colors encompass hues, saturation, and brightness as perceived visually. A key task of this study is not only to extract color terms but also to identify color epithets that express the emotional tone of events or characters, often subconsciously perceived by readers.
+For this purpose, we focus on Almalech’s concept of megacolors, encompassing all lexical methods of expressing color: basic terms (e.g., "black"), prototypes (darkness, coal), prototype competitors (raven, shadow), and contextual characteristics (warm, cold, etc.). Psychological and cultural color associations also play a crucial role, which emphasizes the need to create a color dictionary of the epic in the future.
+Additionally, we aim to compare the use of colors in the original Finnish text and its English translation, while acknowledging the challenges posed by cultural differences, linguistic nuances, and the metric structure of the text. The translation process may lead to discrepancies between verbal and visual meanings of colors, further complicating their analysis.
+
+For example, in Reijo Valta’s article *Kalevalan sininen*, norwegian translator Mikael Holmberg notes the absence of the word "vihreä" (green) in the Kalevala. 
+
+However, using Octavo UI, we identified the green color in the text, for example, “kyyn viherän käärmeheksi,” because the word “viherä” is used in the Kalevala text as a variant of “vihreä.”Accordingly, the color green is present in the epic Kalevala. As for the color blue, it is important to mention the study of the color red in Karelian culture (Karakin J., Pashkova T. Red color in the linguo- and ethnoculture of the Karelians, 2023), as the material for the epic was collected in Karelia, where red, as well as white and blue, were considered appropriate (healing) and protective colors with therapeutic properties.
+
+Regarding blue, Holmberg replaced references to blue forests and elf clothing in his translation. He used the word “grønn” for these instances: “Olen siis joissakin paikoissa kääntänyt sini-sanaa grønn-sanalla. Siniviitaksi kutsutaan joitakin metsän olentoja, ja olen antanut niille vihreät vaatteet,” kertoi Holmberg. “Esimerkiksi säkeestä ‘siniviitta viian eukko’ on tullut ‘kone i din grønne mantel’. Olen yleensä käyttänyt grønn-sanaa metsän adjektiivina, siinä missä metsää kutsutaan Kalevalassa siniseksi."("I have, in some places, translated the word 'sini' as 'grønn'. Some forest beings are called 'siniviitta', and I have given them green clothes," Holmberg said. "For example, the line 'siniviitta viian eukko' has become 'kone i din grønne mantel'. I have generally used 'grønn' as an adjective for the forest, whereas in the Kalevala, the forest is referred to as blue").
+
+From the interpretation of magical contacts and associations related to cultural context, blue forests might symbolize healing contexts or denote dark, dense forests. For elves’ clothing, blue might signify a higher magical hierarchy than green garments, underscoring the need to carefully consider the implications of such shifts during translation.
+
+The article concludes with the words: "But did the ancient Finns see green? They saw it, but they called it blue." This conclusion may be incorrect or false.
+
+The Kalevala represents a complex semiotic system where visual and verbal meanings of colors are interconnected. Exploring colors requires consideration of historical, cultural, religious, and linguistic contexts, underscoring the importance of semiotics and linguistics in the analysis of folk epics. The Kalevala is not only a cornerstone of Finnish and Karelian national culture but also a rich source of insights into pre-Christian Finnish beliefs and traditions.
+The Kalevala's role in Finnish cultural history is unparalleled, even on a global scale. It reflects national spirit and unity, serving as a foundation for Finnish identity. This project is a preliminary attempt to analyze this fundamental text, emphasizing the significance of color as a tool for exploring cultural and linguistic worldviews and the challenges of translating these meanings across languages. The color system within the text represents an internal structure with boundaries shaped by the worldview matrix of Finnish and other languages of translation.
+
+This study seeks to address the following questions:
+1. How do color words and epithets function in the Finnish Kalevala and its English translations, particularly in terms of character depiction and narrative development?
+2. How do color references contribute to the emotional and symbolic tone of the narrative, and how do they shift across different sections of the text?
+3. Are there significant differences in how color epithets are presented in the Finnish and English versions of the Kalevala, and how do these differences affect the symbolic meaning of the text?
+4. How are color epithets related to key themes in the Kalevala, such as the transition from nature to human conflict or the involvement of magic and the supernatural?
+
+Theoretical framework 
+
+Almalech's distinction between "verbal" colors (descriptions expressed through words) and "visual" colors (perceived through images, hues, and saturation) will guide this study. The goal is not only to identify coloratives (words directly describing color) but also color epithets, which reflect emotional contexts and narrative significance. For example, color epithets such as "black as the raven" or "green as the forest" evoke specific emotions or ideas, often processed subconsciously by the reader. This study will focus on Almalech's "mega-colors"— basic color terms like black, white, red, green or blue — and examine their contextual meanings and their role in character development and plot progression. 
+
+Data 
+1. The primary data for this project will consist of the Finnish version of the Kalevala from the database of Project Gutenberg.  
+2. At least one English translation of the Kalevala from the database of Project Gutenberg will be used for comparison, helping to identify any shifts in color symbolism during the translation process.
+3. Scholarly articles, reviews, and other interpretations of the Kalevala will provide context and further guide the interpretation of color symbolism within the text.
+
+Methodology
+
+Our methodology for analysing the role of color in the epic text uses a structured, step-by-step approach, integrating both quantitative and qualitative methods. However, we haven't specified the potential tools in the methodology section. Possible tools may include Python, NLTK, spaCy, and regular expressions (re) for preprocessing; Pandas, NumPy, and Matplotlib for statistical analysis; WordCloud, Seaborn, and Plotly for visualization; as well as parallel concordance tools or custom Python scripts for side-by-side comparison in the comparative analysis:
+1. Text preprocessing . The preprocessing of the text for extracting color terms from the Kalevala involves several key steps. First, unwanted metadata, footnotes, and special characters are removed using regular expressions. Next, the text is tokenised into individual words and converted to lowercase for consistency. Stopwords—common words that do not carry significant meaning—are filtered out. Named Entity Recognition (NER) is applied to identify key entities such as places and people. Colour-related words are identified based on a predefined list of color terms. Lemmatisation is used to reduce words to their base form for more accurate analysis.
+2. Color term (coloronym) extraction . Manually, we compile a list of basic color words (e.g., black, red, green, blue) as well as color epithets (e.g., “red as blood,” “blue as the sky”) found in the text. We use Python’s NLTK and regular expressions to detect and extract color-related words and epithets. We tokenize the text using NLTK's word_tokenize method. Basic color terms are extracted by checking if they exist in the list of predefined colors. We use regular expressions (re.findall) to extract color epithets like "red as blood" or "blue as the sky."
+3. Frequency analysis.  We use Counter from the collections module to count occurrences of each color term. We visualize the frequency distribution using Matplotlib to create a bar chart showing how often each color appears in the text. This process can be applied iteratively across sections or thematic divisions of the Kalevala to generate insights into the distribution and emphasis of color within the narrative.
+4. Contextual analysis . We use NLTK's sent_tokenize to split the text into sentences, making it easier to analyze individual instances of color terms and epithets in context. For each sentence containing a color word or epithet, we check if the color term is part of a description of a character, landscape, emotion, or symbolism. We perform this check with simple keyword searches (character, landscape, emotion, and symbolic) to assign a context tag to each sentence. The output will list color terms, the context of their appearance (e.g., "Character Description," "Landscape Description," etc.), and the sentence in which they occur. This helps interpret the narrative and symbolic meaning of color within the story.
+5. Comparative analysis.  We use the translations to compare the frequency of color words in the Finnish and English versions of the text. We use the Counter() class to count occurrences of each color term in both texts, which will allow us to compare the frequency of color terms in the Finnish and English versions. 
+6. Visualization and results . Bar plots allow us to see the frequency of individual color terms. Heatmaps are great for analyzing color distribution across different sections of the text. For visualizations, we use Matplotlib and Seaborn for plotting. These visual tools help in understanding how color symbolism is used across various sections of the text and can be adapted for both the Finnish and English versions of The Kalevala.
+
+References 
+
+1. Almalech, Mony. 2021.Colors as a semiotic tool for Bible analysis.In book: Sign, Method and the Sacred. Edition: 1st, Berlin, Boston: De Gruyter. (pp.243-266).DOI:10.1515/9783110694925
+2. Еco, Umberto. (1985) 1996. “How Culture Conditions the Colours We See” In The communication theory reader, edited by Paul Cobley, 148–171. New York: Routledge.
+3. Karakin JV, Pashkova TV. 2023. Red color in the linguo- and ethnoculture of the Karelians. Finno-ugorskii mir = Finno-Ugric World. 2023;15;3:334–342. (In Russ.). DOI: 10.15507/2076-2577.015.2023.03.334-342. https://csfu.mrsu.ru/wp-content/uploads/2023/11/334-342.pdf
+4. Lotman, Yuri. 1994. The Text within the Text. Translated by Jerry Leo and Amy Mandelker. PMLA 109, no. 3 (May): 377–84. https://doi.org/10.2307/463074
+5. Mäkelä, Eetu. 2017. OCTAVO – interface for Digital Humanities research based on text collections with associated metadata: https://github.com/hsci-r/octavo-ui
+6. Valta, Reijo. 2017.  Kalevalan sininen. Kaltio no. 1. 2017: https://kaltio.fi/kalevalan-sininen/
+
+
+
+
+
