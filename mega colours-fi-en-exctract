@@ -1,0 +1,59 @@
+import re
+
+# Function to read text from a file
+def read_text_from_file(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        return file.read()
+
+# Function to search for colors in the text
+def find_colors(text, colors):
+    found_colors = {}
+    for color in colors:
+        # Use regular expressions to find words matching color terms
+        pattern = re.compile(r'\b' + color + r'\b', re.IGNORECASE)
+        matches = pattern.findall(text)
+        if matches:
+            found_colors[color] = len(matches)
+    
+    return found_colors
+
+# Lists of megacolors for Finnish and English
+finnish_colors = [
+    "musta", "valkea", "punainen", "sininen", "vihreä","viherän", "keltainen",
+    "harmaa", "ruskea", "kultainen", "hopeinen", "violetti", "turkoosi", "hopea", "pronssi", 
+    "lämpimän", "kirkas", "tumma", "vaalea",
+    "tulinen", "valkoinen", "kiiltävä"
+]
+english_colors = [
+    "black", "white", "red", "blue", "green", "yellow", "grey", "brown",
+    "golden", "silver", "violet", "turquoise", "emerald", "crimson", "azure",
+    "fiery", "bright", "dark", "pale", "snow-white", "fiery-red", "shiny"
+]   
+
+# Paths to the files
+finnish_file_path = 'KalevalaFin.txt'
+english_file_path = 'Kalevala_Eng.txt'
+
+# Process Finnish text
+finnish_text = read_text_from_file(finnish_file_path)
+finnish_result = find_colors(finnish_text, finnish_colors)
+
+# Process English text
+english_text = read_text_from_file(english_file_path)
+english_result = find_colors(english_text, english_colors)
+
+# Display results for Finnish text
+print("Colors found in the Finnish text:")
+if finnish_result:
+    for color, count in finnish_result.items():
+        print(f"{color}: {count} time(s)")
+else:
+    print("No colors found.")
+
+# Display results for English text
+print("\nColors found in the English text:")
+if english_result:
+    for color, count in english_result.items():
+        print(f"{color}: {count} time(s)")
+else:
+    print("No colors found.")
