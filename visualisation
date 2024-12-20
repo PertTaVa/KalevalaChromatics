@@ -1,0 +1,33 @@
+import seaborn as sns
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Assuming you already have the 'df_finnish' and 'df_english' DataFrames
+
+# Add the language column to the Finnish and English DataFrames
+df_finnish["Language"] = "Finnish"
+df_english["Language"] = "English"
+
+# Combine both DataFrames for easier processing
+combined_df = pd.concat([df_finnish, df_english])
+
+# Count occurrences of each character-color pair
+counts = combined_df.groupby(["Language", "Character", "Color"]).size().reset_index(name="Count")
+
+# Create a pivot table to easily visualize counts
+pivot_df = counts.pivot_table(index=['Character', 'Language'], columns='Color', values='Count', aggfunc='sum', fill_value=0)
+
+# Plot the results for both Finnish and English
+plt.figure(figsize=(16, 8))
+pivot_df.plot(kind='bar', stacked=True, color=sns.color_palette("viridis", len(pivot_df.columns)), ax=plt.gca())
+
+plt.title("Frequency of colors mentioned with characters", fontsize=16)
+plt.xlabel("Character and Language", fontsize=14)
+plt.ylabel("Count of Occurrences", fontsize=14)
+plt.xticks(rotation=45)
+plt.legend(title="Color", bbox_to_anchor=(1.05, 1), loc='upper left')
+plt.tight_layout()
+
+# Save and display the chart
+plt.savefig("character_color_frequency_stacked.png")
+plt.show()
