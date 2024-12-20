@@ -1,0 +1,52 @@
+import re
+from collections import Counter
+import matplotlib.pyplot as plt
+
+# Read Finnish and English texts
+with open("KalevalaFin.txt", "r", encoding="utf-8") as f:
+    finnish_text = f.read()
+with open("Kalevala_Eng.txt", "r", encoding="utf-8") as f:
+    english_text = f.read()
+
+# Split texts into sentences
+finnish_sentences = re.split(r'(?<=[.!?]) +', finnish_text)
+english_sentences = re.split(r'(?<=[.!?]) +', english_text)
+
+# Updated list of color words (expanded)
+finnish_colors = [
+    "musta", "valkea", "punainen", "sininen", "vihreä","viherän", "keltainen",
+    "harmaa", "ruskea", "kultainen", "hopeinen", "violetti", "turkoosi", "hopea", "pronssi", "lämpimän", "kirkas", "tumma", "vaalea",
+    "tulinen", "valkoinen", "kiiltävä"
+]
+english_colors = [
+    "black", "white", "red", "blue", "green", "yellow", "grey", "brown",
+    "golden", "silver", "violet", "turquoise", "emerald", "crimson", "azure",
+    "fiery", "bright", "dark", "pale", "snow-white", "fiery-red", "shiny"
+]
+
+# Count color word frequencies
+finnish_color_counts = Counter(
+    [word.lower() for sentence in finnish_sentences for word in re.findall(r'\b\w+\b', sentence) if word.lower() in finnish_colors]
+)
+english_color_counts = Counter(
+    [word.lower() for sentence in english_sentences for word in re.findall(r'\b\w+\b', sentence) if word.lower() in english_colors]
+)
+
+# Print results
+print("Finnish color word counts:")
+print(finnish_color_counts)
+print("\nEnglish color word counts:")
+print(english_color_counts)
+
+# Visualization
+def plot_color_counts(counts, title):
+    plt.bar(counts.keys(), counts.values(), color='skyblue')
+    plt.title(title)
+    plt.xlabel("Colors")
+    plt.ylabel("Frequency")
+    plt.xticks(rotation=45)
+    plt.show()
+
+# Plot for Finnish and English texts
+plot_color_counts(finnish_color_counts, "Color Word Frequency in Finnish Kalevala")
+plot_color_counts(english_color_counts, "Color Word Frequency in English Kalevala")
